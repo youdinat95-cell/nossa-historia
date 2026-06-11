@@ -1,9 +1,9 @@
 const episodios={
-1:['img/foto 1.jpeg','img/foto 2.jpeg','img/foto 3.jpeg'],
-2:['img/foto 4.jpeg','img/foto 5.jpeg','img/foto 6.jpeg','img/foto 7.jpeg'],
-3:['img/foto 8.jpeg','img/foto 9.jpeg','img/foto 10.jpeg','img/foto 11.jpeg'],
-4:['img/foto 12.jpeg','img/foto 13.jpeg','img/foto 14.jpeg','img/foto 15.jpeg'],
-5:['img/foto 16.jpeg','img/foto 17.jpeg','img/foto 18.jpeg']
+1:['img/Foto 1.jpeg','img/Foto 2.jpeg','img/Foto 3.jpeg'],
+2:['img/Foto 4.jpeg','img/Foto 5.jpeg','img/Foto 6.jpeg','img/Foto 7.jpeg'],
+3:['img/Foto 8.jpeg','img/Foto 9.jpeg','img/Foto 10.jpeg','img/Foto 11.jpeg'],
+4:['img/Foto 12.jpeg','img/Foto 13.jpeg','img/Foto 14.jpeg','img/Foto 15.jpeg'],
+5:['img/Foto 16.jpeg','img/Foto 17.jpeg','img/Foto 18.jpeg']
 };
 
 Object.entries(episodios).forEach(([ep,imgs])=>{
