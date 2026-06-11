@@ -34,3 +34,21 @@ setInterval(()=>{
  document.getElementById('hearts').appendChild(h);
  setTimeout(()=>h.remove(),8000);
 },500);
+
+const openLetter = document.getElementById("openLetter");
+const closeLetter = document.getElementById("closeLetter");
+const modal = document.getElementById("letterModal");
+
+openLetter.addEventListener("click", () => {
+    modal.style.display = "flex";
+});
+
+closeLetter.addEventListener("click", () => {
+    modal.style.display = "none";
+});
+
+window.addEventListener("click", (e) => {
+    if(e.target === modal){
+        modal.style.display = "none";
+    }
+});
