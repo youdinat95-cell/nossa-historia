@@ -26,3 +26,68 @@ button{padding:14px 28px;background:#E50914;color:#fff;border:0;border-radius:8p
 #hearts{position:fixed;inset:0;pointer-events:none}
 .heart{position:absolute;bottom:-20px;animation:up 8s linear forwards}
 @keyframes up{to{transform:translateY(-110vh);opacity:0}}
+
+.modal{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.85);
+    z-index:9999;
+    justify-content:center;
+    align-items:center;
+    animation:fadeIn .5s ease;
+}
+
+.modal-content{
+    width:90%;
+    max-width:700px;
+    position:relative;
+}
+
+.letter-paper{
+    background:#fffaf0;
+    color:#222;
+    padding:40px;
+    border-radius:15px;
+    box-shadow:0 0 40px rgba(0,0,0,.5);
+    animation:openLetter .7s ease;
+}
+
+#openLetter{
+    padding:15px 35px;
+    font-size:18px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+#closeLetter{
+    position:absolute;
+    top:-15px;
+    right:-15px;
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background:#E50914;
+    color:white;
+    text-align:center;
+    line-height:40px;
+    font-size:24px;
+    cursor:pointer;
+}
+
+@keyframes fadeIn{
+    from{opacity:0;}
+    to{opacity:1;}
+}
+
+@keyframes openLetter{
+    from{
+        transform:translateY(50px) scale(.8);
+        opacity:0;
+    }
+    to{
+        transform:translateY(0) scale(1);
+        opacity:1;
+    }
+}
